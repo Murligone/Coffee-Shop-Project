@@ -335,6 +335,7 @@ hr {
   } */
   p{
     /* width: 100vh; */
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     text-align: center; 
