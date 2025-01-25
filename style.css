@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap");
+/* variables */
+:root {
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+/* utility styles */
+button {
+  position: absolute;
+  padding: 10px 30px;
+  font-family: "Playfair Display", serif;
+  background: transparent;
+  background-color: var(--main-color);
+  transform: translateY(60px);
+  border-radius: 20px;
+  margin-top: -20px;
+  border: none;
+  cursor: pointer;
+}
+.main-button {
+  position: absolute;
+  padding: 10px 30px;
+  bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+  background: transparent;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transform: translateY(60px);
+}
+
+/*resets*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* body */
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #100e0f;
+}
+/* nav--bar style  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+li {
+  display: inline;
+  list-style: none;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  /* text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 30px;  
+  padding-bottom: 7px; */
+}
+li a:hover {
+  border-bottom: 2px solid var(--main-color);
+}
+/* header */
+header {
+  background: url("pexels-nao-triponez-129207-removebg-preview.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: "Playfair Display SC", serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+.main-heading {
+  position: absolute;
+  top: 7rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+}
+.primary-heading {
+  position: absolute;
+  bottom: 4rem;
+  margin-left: -16rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+}
+
+/* content */
+.section-content {
+  height: 100vh;
+  /* margin-top: 10px; */
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.img {
+  width: 400px;
+  height: 400px;
+  background: url(pexels-chitokan-2183027-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+.title-style {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: white;
+  transform: translateX(-100px);
+}
+.line {
+  width: 100px;
+  height: 2px;
+  background: white;
+  transform: translateX(-120px);
+}
+.section-content p {
+  color: white;
+  max-width: 500px;
+  font-family: sans-serif;
+  line-height: 20px;
+  /* margin-top: 10px; */
+  margin: 20px, 0px;
+}
+
+/* cofee main */
+.cofee-container {
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-section p {
+  color: white;
+  max-width: 500px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.title-two {
+  font-size: 3rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+.img-container {
+  width: 500px;
+  height: 400px;
+}
+.img-2 {
+  width: 400px;
+  height: 400px;
+}
+/* product card styling */
+.products {
+  margin-top: 5rem;
+}
+.title-three {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-left: 10rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  border: 2px solid #deab5f;
+  padding: 0px 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  /* margin-top: 20px; */
+  margin-bottom: 4rem;
+}
+.card-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -60px;
+}
+.img-one {
+  background-image: url(1.png);
+  background-position: center;
+  background-size: cover;
+}
+.img-two {
+  background-image: url(2.png);
+  background-position: center;
+  background-size: cover;
+}
+.img-three {
+  background-image: url(3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  font-size: 1.5rem;
+  /* margin-top: 150px; */
+  /* margin-left: 20px; */
+}
+.card .items p {
+  color: #fff;
+  font-family: sans-serif;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/* footer */
+footer {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+footer .container {
+  text-align: center;
+  margin: 20px;
+  max-width: 400px;
+}
+footer .heading-info {
+  margin-bottom: 20px;
+}
+footer p {
+  line-height: 25px;
+}
+span {
+  color: var(--main-color);
+}
+hr {
+  margin-bottom: 1rem;
+  border: 2px solid var(--main-color);
+  width: 300px;
+  margin: 0 auto;
+}
+.para {
+  color: #fff;
+  font-family: sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+}
+/* adding responsivness */
+@media only screen and (max-width: 768px) {
+  .main-button .primary-heading {
+    width: 100vh; text-align: center;
+    font-size: 2.5rem;
+  }
+  .section-content .title {
+    transform: translateX(50px);
+  }
+  .section-content .line {
+    display: none;
+  }       
+  /* .content-section{
+    text-align: center;
+  } */
+  .section-content .img-container .img {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .cofee-container .img-container {
+    margin-top: 5rem;
+    width: 50%;
+  }
+  .title{
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+  justify-content: center;
+    text-align: center;
+  }
+  .title-two {
+    margin: 0 auto;
+  }
+  .title-three{
+    margin-bottom: 80px;
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 4rem;
+    /* margin:0 auto; */
+  }
+  .para{
+    margin: 0 auto;
+  }
+  /* .story-content p{
+    width: 100vh;
+    text-align: center; 
+  } */
+  p{
+    /* width: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+  }
+
+}
